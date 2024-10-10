@@ -1,5 +1,11 @@
-template-repository (1.0-1) unstable; urgency=medium
+relic (7.6.1-2) unstable; urgency=medium
 
-  * Initial release
+  * Source only upload for migration to testing
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Simon Josefsson <simon@josefsson.org>  Fri, 19 Jan 2024 20:07:24 +0100
+
+relic (7.6.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1060815)
+
+ -- Simon Josefsson <simon@josefsson.org>  Wed, 17 Jan 2024 03:04:27 +0100

@@ -1,4 +1,14 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_BUILDPKG := 				\
+	github.com/sassoftware/relic/lib/pkcs7		\
+	github.com/sassoftware/relic/lib/signjar	\
+	github.com/sassoftware/relic/lib/pkcs9		\
+	github.com/sassoftware/relic/lib/certloader	\
+	github.com/sassoftware/relic/lib/zipslicer
+
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
+
+override_dh_auto_install:
+	dh_auto_install -- --no-binaries
